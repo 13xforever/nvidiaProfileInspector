@@ -1,41 +1,28 @@
-/***************************************************************************\
-|*                                                                           *|
-|*      Copyright NVIDIA Corporation.  All rights reserved.                  *|
-|*                                                                           *|
-|*   NOTICE TO USER:                                                         *|
-|*                                                                           *|
-|*   This source code is subject to NVIDIA ownership rights under U.S.       *|
-|*   and international Copyright laws.  Users and possessors of this         *|
-|*   source code are hereby granted a nonexclusive, royalty-free             *|
-|*   license to use this code in individual and commercial software.         *|
-|*                                                                           *|
-|*   NVIDIA MAKES NO REPRESENTATION ABOUT THE SUITABILITY OF THIS SOURCE     *|
-|*   CODE FOR ANY PURPOSE. IT IS PROVIDED "AS IS" WITHOUT EXPRESS OR         *|
-|*   IMPLIED WARRANTY OF ANY KIND. NVIDIA DISCLAIMS ALL WARRANTIES WITH      *|
-|*   REGARD TO THIS SOURCE CODE, INCLUDING ALL IMPLIED WARRANTIES OF         *|
-|*   MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR          *|
-|*   PURPOSE. IN NO EVENT SHALL NVIDIA BE LIABLE FOR ANY SPECIAL,            *|
-|*   INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES          *|
-|*   WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN      *|
-|*   AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING     *|
-|*   OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOURCE      *|
-|*   CODE.                                                                   *|
-|*                                                                           *|
-|*   U.S. Government End Users. This source code is a "commercial item"      *|
-|*   as that term is defined at 48 C.F.R. 2.101 (OCT 1995), consisting       *|
-|*   of "commercial computer  software" and "commercial computer software    *|
-|*   documentation" as such terms are used in 48 C.F.R. 12.212 (SEPT 1995)   *|
-|*   and is provided to the U.S. Government only as a commercial end item.   *|
-|*   Consistent with 48 C.F.R.12.212 and 48 C.F.R. 227.7202-1 through        *|
-|*   227.7202-4 (JUNE 1995), all U.S. Government End Users acquire the       *|
-|*   source code with only those rights set forth herein.                    *|
-|*                                                                           *|
-|*   Any use of this source code in individual and commercial software must  *|
-|*   include, in the user documentation and internal comments to the code,   *|
-|*   the above Disclaimer and U.S. Government End Users Notice.              *|
-|*                                                                           *|
-|*                                                                           *|
-\***************************************************************************/
+/*********************************************************************************************************\
+|*                                                                                                        *|
+|* SPDX-FileCopyrightText: Copyright (c) 2019-2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.  *|
+|* SPDX-License-Identifier: MIT                                                                           *|
+|*                                                                                                        *|
+|* Permission is hereby granted, free of charge, to any person obtaining a                                *|
+|* copy of this software and associated documentation files (the "Software"),                             *|
+|* to deal in the Software without restriction, including without limitation                              *|
+|* the rights to use, copy, modify, merge, publish, distribute, sublicense,                               *|
+|* and/or sell copies of the Software, and to permit persons to whom the                                  *|
+|* Software is furnished to do so, subject to the following conditions:                                   *|
+|*                                                                                                        *|
+|* The above copyright notice and this permission notice shall be included in                             *|
+|* all copies or substantial portions of the Software.                                                    *|
+|*                                                                                                        *|
+|* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR                             *|
+|* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,                               *|
+|* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL                               *|
+|* THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                             *|
+|* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING                                *|
+|* FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER                                    *|
+|* DEALINGS IN THE SOFTWARE.                                                                              *|
+|*                                                                                                        *|
+|*                                                                                                        *|
+\*********************************************************************************************************/
 
 #ifndef _NVAPI_DRIVER_SETTINGS_H_
 #define _NVAPI_DRIVER_SETTINGS_H_
@@ -116,7 +103,6 @@
 #define VSYNC_BEHAVIOR_FLAGS_STRING                L"Vsync - Behavior Flags"
 #define WKS_API_STEREO_EYES_EXCHANGE_STRING        L"Stereo - Swap eyes"
 #define WKS_API_STEREO_MODE_STRING                 L"Stereo - Display mode"
-#define WKS_MEMORY_ALLOCATION_POLICY_STRING        L"Memory Allocation Policy"
 #define WKS_STEREO_DONGLE_SUPPORT_STRING           L"Stereo - Dongle Support"
 #define WKS_STEREO_SUPPORT_STRING                  L"Stereo - Enable"
 #define WKS_STEREO_SWAP_MODE_STRING                L"Stereo - swap mode"
@@ -130,7 +116,6 @@
 #define PRERENDERLIMIT_STRING                      L"Maximum pre-rendered frames"
 #define PS_SHADERDISKCACHE_STRING                  L"Shader Cache"
 #define PS_SHADERDISKCACHE_DLL_PATH_WCHAR_STRING   L"shader cache path to dll"
-#define PS_SHADERDISKCACHE_FLAGS_STRING            L"shader cache control flags"
 #define PS_SHADERDISKCACHE_MAX_SIZE_STRING         L"Shader disk cache maximum size"
 #define PS_TEXFILTER_ANISO_OPTS2_STRING            L"Texture filtering - Anisotropic sample optimization"
 #define PS_TEXFILTER_BILINEAR_IN_ANISO_STRING      L"Texture filtering - Anisotropic filter optimization"
@@ -221,7 +206,6 @@ enum ESetting {
     VSYNC_BEHAVIOR_FLAGS_ID                       = 0x10FDEC23,
     WKS_API_STEREO_EYES_EXCHANGE_ID               = 0x11AE435C,
     WKS_API_STEREO_MODE_ID                        = 0x11E91A61,
-    WKS_MEMORY_ALLOCATION_POLICY_ID               = 0x11112233,
     WKS_STEREO_DONGLE_SUPPORT_ID                  = 0x112493BD,
     WKS_STEREO_SUPPORT_ID                         = 0x11AA9E99,
     WKS_STEREO_SWAP_MODE_ID                       = 0x11333333,
@@ -235,7 +219,6 @@ enum ESetting {
     PRERENDERLIMIT_ID                             = 0x007BA09E,
     PS_SHADERDISKCACHE_ID                         = 0x00198FFF,
     PS_SHADERDISKCACHE_DLL_PATH_WCHAR_ID          = 0x0019A002,
-    PS_SHADERDISKCACHE_FLAGS_ID                   = 0x00F4889B,
     PS_SHADERDISKCACHE_MAX_SIZE_ID                = 0x00AC8497,
     PS_TEXFILTER_ANISO_OPTS2_ID                   = 0x00E73211,
     PS_TEXFILTER_BILINEAR_IN_ANISO_ID             = 0x0084CD70,
@@ -248,9 +231,9 @@ enum ESetting {
     SET_VAB_DATA_ID                               = 0x00AB8687,
     VSYNCMODE_ID                                  = 0x00A879CF,
     VSYNCTEARCONTROL_ID                           = 0x005A375C,
-    TOTAL_DWORD_SETTING_NUM = 98,
+    TOTAL_DWORD_SETTING_NUM = 96,
     TOTAL_WSTRING_SETTING_NUM = 5,
-    TOTAL_SETTING_NUM = 103,
+    TOTAL_SETTING_NUM = 101,
     INVALID_SETTING_ID = 0xFFFFFFFF
 };
 
@@ -778,7 +761,9 @@ enum EValues_SHIM_RENDERING_OPTIONS {
     SHIM_RENDERING_OPTIONS_ALLOW_DYNAMIC_DISPLAY_MUX_SWITCH = 0x01000000U,
     SHIM_RENDERING_OPTIONS_DISALLOW_DYNAMIC_DISPLAY_MUX_SWITCH = 0x02000000U,
     SHIM_RENDERING_OPTIONS_DISABLE_TURING_POWER_POLICY   = 0x04000000U,
-    SHIM_RENDERING_OPTIONS_NUM_VALUES = 28,
+    SHIM_RENDERING_OPTIONS_ALLOW_DYNAMIC_DISPLAY_MUX_SWITCH_MDM = 0x08000000U,
+    SHIM_RENDERING_OPTIONS_DISALLOW_DYNAMIC_DISPLAY_MUX_SWITCH_MDM = 0x10000000U,
+    SHIM_RENDERING_OPTIONS_NUM_VALUES = 30,
     SHIM_RENDERING_OPTIONS_DEFAULT = 0x00000000U
 };
 
@@ -962,14 +947,6 @@ enum EValues_WKS_API_STEREO_MODE {
     WKS_API_STEREO_MODE_DEFAULT = WKS_API_STEREO_MODE_SHUTTER_GLASSES
 };
 
-enum EValues_WKS_MEMORY_ALLOCATION_POLICY {
-    WKS_MEMORY_ALLOCATION_POLICY_AS_NEEDED               = 0x0,
-    WKS_MEMORY_ALLOCATION_POLICY_MODERATE_PRE_ALLOCATION = 0x1,
-    WKS_MEMORY_ALLOCATION_POLICY_AGGRESSIVE_PRE_ALLOCATION = 0x2,
-    WKS_MEMORY_ALLOCATION_POLICY_NUM_VALUES = 3,
-    WKS_MEMORY_ALLOCATION_POLICY_DEFAULT = WKS_MEMORY_ALLOCATION_POLICY_AS_NEEDED
-};
-
 enum EValues_WKS_STEREO_DONGLE_SUPPORT {
     WKS_STEREO_DONGLE_SUPPORT_OFF                        = 0,
     WKS_STEREO_DONGLE_SUPPORT_DAC                        = 1,
@@ -1052,31 +1029,6 @@ enum EValues_PS_SHADERDISKCACHE {
     PS_SHADERDISKCACHE_ON                                = 0x00000001,
     PS_SHADERDISKCACHE_NUM_VALUES = 2,
     PS_SHADERDISKCACHE_DEFAULT = PS_SHADERDISKCACHE_ON
-};
-
-enum EValues_PS_SHADERDISKCACHE_FLAGS {
-    PS_SHADERDISKCACHE_FLAGS_DISABLE_DEFAULT_COMPILES    = 0x00000001,
-    PS_SHADERDISKCACHE_FLAGS_DISABLE_OPTIONAL_COMPILES   = 0x00000002,
-    PS_SHADERDISKCACHE_FLAGS_DISABLE_DRIVER_VERSIONING   = 0x00000008,
-    PS_SHADERDISKCACHE_FLAGS_DUMP_HISTOGRAM              = 0x00000010,
-    PS_SHADERDISKCACHE_FLAGS_DUMP_TIMELINE               = 0x00000020,
-    PS_SHADERDISKCACHE_FLAGS_DISABLE_GARBAGE_COLLECTION  = 0x00000040,
-    PS_SHADERDISKCACHE_FLAGS_ENABLE_ENCRYPTION           = 0x00000080,
-    PS_SHADERDISKCACHE_FLAGS_DISABLE_CRC                 = 0x00000100,
-    PS_SHADERDISKCACHE_FLAGS_ENABLE_STATS_FILES          = 0x00000200,
-    PS_SHADERDISKCACHE_FLAGS_DISABLE_STATS_RESET         = 0x00000400,
-    PS_SHADERDISKCACHE_FLAGS_DISABLE_DEBUG_FORCED_COMPILE = 0x00000800,
-    PS_SHADERDISKCACHE_FLAGS_NO_COMPRESSION              = 0x00001000,
-    PS_SHADERDISKCACHE_FLAGS_RLE_COMPRESSION             = 0x00002000,
-    PS_SHADERDISKCACHE_FLAGS_LZMA_COMPRESSION            = 0x00004000,
-    PS_SHADERDISKCACHE_FLAGS_BACKEND_MEM_MAP_FILES       = 0x00010000,
-    PS_SHADERDISKCACHE_FLAGS_BACKEND_DLL                 = 0x00020000,
-    PS_SHADERDISKCACHE_FLAGS_FLOOD_CACHE_DIRECTORY       = 0x00100000,
-    PS_SHADERDISKCACHE_FLAGS_DISABLE_DEDUPLICATION       = 0x00200000,
-    PS_SHADERDISKCACHE_FLAGS_DELETE_PERFECT_CACHES       = 0x00400000,
-    PS_SHADERDISKCACHE_FLAGS_ALL_BUILDS_MISMATCH_TEST    = 0x00800000,
-    PS_SHADERDISKCACHE_FLAGS_NUM_VALUES = 20,
-    PS_SHADERDISKCACHE_FLAGS_DEFAULT = 0x0
 };
 
 enum EValues_PS_SHADERDISKCACHE_MAX_SIZE {
