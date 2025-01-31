@@ -5876,10 +5876,8 @@
 
     <!-- DLSS overrides -->
     <CustomSetting>
-      <UserfriendlyName>DLSS 3.1.11+ - Force all quality levels to DLAA (base profile only)</UserfriendlyName>
       <HexSettingID>0x10E41DF4</HexSettingID>
-      <GroupName>5 - Common</GroupName>
-      <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
       <SettingValues>
         <CustomSettingValue>
           <UserfriendlyName>Off</UserfriendlyName>
@@ -5890,13 +5888,11 @@
           <HexValue>0x00000001</HexValue>
         </CustomSettingValue>
       </SettingValues>
-      <SettingMasks />
     </CustomSetting>
     <CustomSetting>
-      <UserfriendlyName>DLSS 3.1.11+ - Forced scaling ratio (base profile only)</UserfriendlyName>
+      <UserfriendlyName>Override DLSS-SR scaling ratio (base profile only)</UserfriendlyName>
       <HexSettingID>0x10E41DF5</HexSettingID>
-      <GroupName>5 - Common</GroupName>
-      <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
       <SettingValues>
         <CustomSettingValue>
           <UserfriendlyName>Off</UserfriendlyName>
@@ -5939,13 +5935,10 @@
           <HexValue>0x3F800000</HexValue>
         </CustomSettingValue>
       </SettingValues>
-      <SettingMasks />
     </CustomSetting>
     <CustomSetting>
-      <UserfriendlyName>DLSS 3.1.11+ - Forced DLSS3.1 preset letter (base profile only)</UserfriendlyName>
       <HexSettingID>0x10E41DF3</HexSettingID>
-      <GroupName>5 - Common</GroupName>
-      <MinRequiredDriverVersion>0</MinRequiredDriverVersion>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
       <SettingValues>
         <CustomSettingValue>
           <UserfriendlyName>Preset E</UserfriendlyName>
@@ -5964,7 +5957,39 @@
           <HexValue>0x00FFFFFF</HexValue>
         </CustomSettingValue>
       </SettingValues>
-      <SettingMasks />
+    </CustomSetting>
+    <!-- custom group name for driver settings -->
+    <CustomSetting>
+      <HexSettingID>0x104d6667</HexSettingID>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
+    </CustomSetting>
+    <CustomSetting>
+      <HexSettingID>0x10e41e03</HexSettingID>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
+    </CustomSetting>
+    <CustomSetting>
+      <HexSettingID>0x10afb76c</HexSettingID>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
+    </CustomSetting>
+    <CustomSetting>
+      <HexSettingID>0x10bd9423</HexSettingID>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
+    </CustomSetting>
+    <CustomSetting>
+      <HexSettingID>0x10e41e02</HexSettingID>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
+    </CustomSetting>
+    <CustomSetting>
+      <HexSettingID>0x10e41df7</HexSettingID>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
+    </CustomSetting>
+    <CustomSetting>
+      <HexSettingID>0x10afb768</HexSettingID>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
+    </CustomSetting>
+    <CustomSetting>
+      <HexSettingID>0x10e41e01</HexSettingID>
+      <GroupName>5.2 - DLSS Overrides</GroupName>
     </CustomSetting>
   </Settings>
 </CustomSettingNames>

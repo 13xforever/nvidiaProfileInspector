@@ -465,6 +465,12 @@ namespace nspector.Common
                         settingState = SettingState.GlobalSetting;
                 }
             }
+#if DEBUG
+            if (settingMeta.SettingName?.Contains("DLSS") is true)
+            {
+                Debug.Print($"0x{setting.settingId:x8} {settingMeta.SettingName}");
+            }
+#endif
 
             return new SettingItem()
             {
